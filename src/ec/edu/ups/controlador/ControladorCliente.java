@@ -9,7 +9,9 @@ import ec.edu.ups.modelo.Cliente;
 import ec.edu.ups.vista.VistaCliente;
 
 /**
- *
+ * Controlador Cliente.
+ * 
+ * 
  * @author Dr. Gabriel A. León Paredes
  */
 public class ControladorCliente {
@@ -17,11 +19,12 @@ public class ControladorCliente {
     //objetos vista y modelo
     private VistaCliente vistaCliente;
     private Cliente cliente;
-
+    
     // constructor
     public ControladorCliente(Cliente cliente, VistaCliente vistaCliente) {
         this.cliente = cliente;
         this.vistaCliente = vistaCliente;
+        
     }
 
     //getters y setters para el modelo
@@ -53,4 +56,5 @@ public class ControladorCliente {
     public void actualizarVista() {
         this.vistaCliente.imprimirDatosCliente(cliente.getId(), cliente.getNombre(), cliente.getApellido());
     }
+    
 }
