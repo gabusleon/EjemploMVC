@@ -4,5 +4,5 @@ En este repositorio se presenta un ejemplo del uso del patrón Modelo-Vista-Cont
 
 # Herramientas
 
-Java = JDK 1.8
-NetBeans = 8.0.2
+* Java = JDK 1.8
+* NetBeans = 8.0.2
