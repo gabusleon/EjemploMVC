@@ -1,4 +1,4 @@
-# EjemploMVC-DAO
+# Ejemplo MVC en Java
 
 En este repositorio se presenta un ejemplo del uso del patrón Modelo-Vista-Controlador para Java
 
