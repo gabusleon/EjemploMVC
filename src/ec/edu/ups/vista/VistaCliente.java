@@ -5,8 +5,6 @@
  */
 package ec.edu.ups.vista;
 
-import ec.edu.ups.modelo.Cliente;
-import java.util.Scanner;
 
 /**
  *
