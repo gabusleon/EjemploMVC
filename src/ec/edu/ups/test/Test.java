@@ -7,6 +7,7 @@ package ec.edu.ups.test;
 
 import ec.edu.ups.controlador.ControladorCliente;
 import ec.edu.ups.modelo.Cliente;
+import ec.edu.ups.modelo.DetalleCliente;
 import ec.edu.ups.vista.VistaCliente;
 
 /**
@@ -21,11 +22,13 @@ public class Test {
         VistaCliente vista = new VistaCliente();
 
         //se crea un objeto controlador y se le pasa el modelo y la vista
-        ControladorCliente controlador = new ControladorCliente(cliente, vista);
-
+        ControladorCliente controlador = new ControladorCliente(cliente, vista);        
+        
         // se muestra los datos del cliente
-        controlador.actualizarVista();
-
+        controlador.actualizarVista();       
+        
+        //actualizar el detalle
+        controlador.agregarDetalle(2, "Detalle 2");
         // se actualiza un cliente y se muestra de nuevo los datos
         controlador.setNombre("Juanito");
         controlador.actualizarVista();
@@ -36,7 +39,8 @@ public class Test {
         Cliente cliente = new Cliente();
         cliente.setId(1);
         cliente.setNombre("Pepito");
-        cliente.setApellido("Perez");
+        cliente.setApellido("Perez");                
+        cliente.agregarDetalleCliente(1, "Detalle 1");
         return cliente;
     }
 }

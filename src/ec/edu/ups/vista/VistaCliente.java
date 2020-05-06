@@ -12,10 +12,11 @@ package ec.edu.ups.vista;
  */
 public class VistaCliente {
     
-    public  void imprimirDatosCliente(int id, String nombre, String apellido){
+    public  void imprimirDatosCliente(int id, String nombre, String apellido, String detalle){
         System.out.println("Datos del Cliente");
         System.out.println("ID: " + id);
         System.out.println("Nombre: "+ nombre);
         System.out.println("Apellido: " + apellido);
+        System.out.println("Detalle: " + detalle);
     }
 }

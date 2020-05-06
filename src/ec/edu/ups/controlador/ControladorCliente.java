@@ -51,10 +51,14 @@ public class ControladorCliente {
     public void setApellido(String apellido) {
         this.cliente.setApellido(apellido);
     }
+    
+    public void agregarDetalle(int id, String detalle){
+        this.cliente.agregarDetalleCliente(id, detalle);
+    }
 
     //pasa el modelo a la vista para presentar los datos
     public void actualizarVista() {
-        this.vistaCliente.imprimirDatosCliente(cliente.getId(), cliente.getNombre(), cliente.getApellido());
+        this.vistaCliente.imprimirDatosCliente(cliente.getId(), cliente.getNombre(), cliente.getApellido(), cliente.getDetalleCliente().getDetalle());
     }
     
 }

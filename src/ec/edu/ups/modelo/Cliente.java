@@ -17,6 +17,7 @@ public class Cliente {
     private int id;
     private String nombre;
     private String apellido;
+    private DetalleCliente detalleCliente;
 
     //constructores
     public Cliente() {
@@ -51,6 +52,15 @@ public class Cliente {
 
     public void setApellido(String apellido) {
         this.apellido = apellido;
+    }
+
+    public DetalleCliente getDetalleCliente() {
+        return detalleCliente;
+    }        
+    
+    //composicion
+    public void agregarDetalleCliente(int id, String detalle) {
+        this.detalleCliente = new DetalleCliente(id, detalle);
     }
 
     //métodos de la clase Object
